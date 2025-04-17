@@ -1,0 +1,104 @@
+/*Fuente*/
+@font-face {
+    font-family: 'Qurova';
+    src: url(../assets/fonts/Qurova/QurovaDEMO-Medium-BF67a5c6382651c.otf);
+}
+:root{
+    --font: 'Qurova', sans-serif;
+    --black: #010205;
+    --blueDark: #2C3343;
+    --yellow: #FFDF01;
+    --orange: #EDA938;
+    --lightPink: #FDF4EF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+    background-color: var(--blueDark);
+}
+a{
+    text-decoration: none;
+    display: inline;
+}
+.body__left--logo,
+.body__title,
+a{
+    color: var(--lightPink);
+}
+.body__left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: calc(27px - 16px);
+}
+.body__left--logo{
+    font-size: 24px;
+    font-family: var(--font);
+}
+.body__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.body__title{
+    font-size: 55px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 18px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 70px;
+    background-color: var(--orange);
+    font-size: 24px;
+    border-radius: 6px;
+}
+.body__btn{
+    color: var(--blueDark);
+}
+.body__rrhh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 300px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: var(--yellow);
+}
+.body__rrhh a{
+    font-size: 32px;
+    color: var(--blueDark);
+}
+.body__image{
+    position: relative;
+    width: 570px;
+    background-image: url(../assets/img/rendering-inspirational-mood-board.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+.body__btn--image{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--blueDark);
+}
