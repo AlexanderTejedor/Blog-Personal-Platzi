@@ -16,7 +16,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+a{
+    text-decoration: none;
+    display: inline;
+}
+.home-page{
     position: fixed;
     top: 0;
     bottom: 0;
@@ -25,12 +29,6 @@ body{
     display: flex;
     justify-content: space-between;
     background-color: var(--blueDark);
-}
-a{
-    text-decoration: none;
-    display: inline;
-}
-.home-page{
     margin: 16px;
 }
 .body__left--logo,
@@ -106,9 +104,14 @@ a{
 }
 
 /*========== Blogs ==========*/
+.blogs-page{
+    width: 100%;
+    background-color: var(--blueDark);
+}
 .header-blogs{
-    position: absolute;
+    position: fixed;
     margin: 0;
+    top: 0;
     width: 100%;
     height: 70px;
     padding: 0 16px;
@@ -116,12 +119,122 @@ a{
     justify-content: space-between;
     align-items: center;
     background-color: var(--yellow);
+    z-index: 100;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.new-blogs{
+    gap: 32px;
 }
 .header__blogs--logo{
     font-size: 24px;
     font-family: var(--font);
     color: var(--blueDark);
 }
-.main-container{
-    margin-top: calc(75px + 16px);
+.blogs-page{
+    margin-top: calc(70px + 32px);
+}
+.new-blogs-card{
+    position: relative;
+    width: 590px;
+    height: 575px;
+    background-image: url(../assets/img/screencapture-alexandertejedor-github-io-Bento-Grid-2025-04-10-12_36_17.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    display: flex;
+}
+.new-blogs{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.new-blogs-card::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.976) 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 8px;
+}
+.new-blogs-card--info{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    margin: 16px;
+}
+.new-blogs-card--info div{
+    width: 55%;
+    color: var(--lightPink);
+    margin-right: 20px;
+    z-index: 1;
+}
+.new-blogs-card--info a{
+    width: 180px;
+    align-self: flex-end;
+    color: var(--blueDark);
+}
+.new-blogs-card--info div h3{
+    font-size: 36px;
+    font-weight: 500;
+}
+.new-blogs-card--info div p{
+    font-size: 20px;
+}
+.two,
+.three{
+    height: 261px;
+}
+.three{
+    margin-top: 32px;
+}
+.all-blogs{
+    display: flex;
+    gap: 32px;
+}
+.post-container{
+    width: 350px;
+    height: 100%;
+    color:var(--lightPink);
+}
+.post-container img{
+    width: 350px;
+    height: 290px;
+    border-radius: 8px;
+    margin-bottom: 9px;
+}
+.post-container .post-container-title{
+    font-size: 24px;
+}
+.post-container p{
+    font-size: 16px;
+}
+.post-container a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 50px;
+    margin-top: 10px;
+    color: var(--blueDark);
+    background-color: var(--orange);
+    border-radius: 6px;
+}
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 70px;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
