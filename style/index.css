@@ -24,12 +24,14 @@ body{
     right: 0;
     display: flex;
     justify-content: space-between;
-    margin: 16px;
     background-color: var(--blueDark);
 }
 a{
     text-decoration: none;
     display: inline;
+}
+.home-page{
+    margin: 16px;
 }
 .body__left--logo,
 .body__title,
@@ -101,4 +103,25 @@ a{
     bottom: 20px;
     right: 20px;
     background-color: var(--blueDark);
+}
+
+/*========== Blogs ==========*/
+.header-blogs{
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--yellow);
+}
+.header__blogs--logo{
+    font-size: 24px;
+    font-family: var(--font);
+    color: var(--blueDark);
+}
+.main-container{
+    margin-top: calc(75px + 16px);
 }
